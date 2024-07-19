@@ -1,0 +1,15 @@
+CONCATENAR VALORES EN PYTHON:
+
+concatenar separando con comas:
+print(saludo,nombre)
+por defecto todo lo separado por comas, va a aperecer separado por un espacio, al imprimirse por pantalla
+
+concatenar con +:
+concatenacion = saludo +" "+ nombre
+si no agregaramos el espacio (" ") entre los +, tanto el saludo como el nombre se mostrarian pegados al imprimirse por pantalla (holavictor)
+
+concatenar con comas y sustituirlas por cualquier otro simbolo
+print(saludo,nombre, sep="***")
+sep="***" reemplaza el separador original de python que es el espacio, lo reemplazaria por asteriscos
+
+
