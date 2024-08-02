@@ -1,3 +1,6 @@
+#importamos la libreria os para poder limpiar la consola desde el codigo y el menu quede mas agradable para el usuario
+import os
+os.system('cls')
 """
 ¿Qué es el proyecto integrador?
 ● Se desarrollará un proyecto a lo largo de todo el curso.
@@ -32,8 +35,7 @@ de cursos como un número entero) en una lista
 de alumnos.
 
 """
-#importamos la libreria os para poder limpiar la consola desde el codigo y el menu quede mas agradable para el usuario
-import os
+
 #creacion de la lista donde se almacenaran los alumnos
 alumnos = []
 #creacion del menu
@@ -46,6 +48,7 @@ while True:
     os.system('cls')
     #control de opciones
     if opcion == 1:
+        print("AGREGAR ALUMNOS")
         nombre = input("ingrese el nombre: ")
         cursos = int(input("ingrese la cantidad de cursos: "))
         alumnos.append([nombre,cursos])
@@ -56,6 +59,7 @@ while True:
         for alumno in alumnos:
             nombre = alumno[0]
             curso = alumno[1]
+            print("LISTA DE ALUMNOS")
             print(f"nombre: {nombre}, cursos: {curso}")
         print("\n")
         os.system('pause')
@@ -65,3 +69,6 @@ while True:
     else:
         print("la opcion ingresada no es la correcta, vuelva a intentarlo.")
 print("gracias por utilizar el programa!")
+
+
+
